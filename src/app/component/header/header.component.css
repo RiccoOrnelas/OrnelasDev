@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Shadows+Into+Light&display=swap');
+
+* {
+    background-color: rgb(20, 20, 20);
+    margin-bottom: 0px;
+
+}
+
+header {
+
+
+
+
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    border-bottom: 2px solid darkgrey;
+
+    margin-bottom: 0px;
+}
+
+.links,
+.brand h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    text-decoration: none;
+    color: #F2C12E;
+}
+
+.brand h2 {
+    letter-spacing: 2px;
+
+    font-family: "Calligraffitti", cursive;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+.brand>h2:hover {
+    color:
+        yellow;
+    transition: 1s;
+}
+
+.brand img {
+    height: 1cm;
+    width: 2cm;
+}
+
+.links li {
+    list-style: none;
+    margin-right: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#ctt a {
+    color:
+        #F2C12E;
+}
+
+#ctt a:hover {
+    background-color: #f8e7b4;
+    color: black;
+    transition: 0.8s;
+
+}
+
+.links li a {
+    text-decoration: none;
+    color: #fff6f6;
+    text-shadow: #fff6f6;
+}
+
+.links li a:hover {
+    cursor: pointer;
+    text-decoration: underline #F2C12E 2px;
+    transition: 0.5s;
+}
+
+.to a img {
+    width: 25px;
+    height: 25px;
+}
+
+.to a img:hover {
+    position: relative;
+    transform: translateY(-5px);
+}

@@ -1,0 +1,46 @@
+.techs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 100%;
+
+    border-bottom: 2px solid darkgray;
+}
+
+.techs h3:hover {
+    text-decoration: underline solid 2px #FFC436;
+    position: relative;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.stack {
+    color: #FFC436;
+    font-family: 'Prompt', sans-serif;
+}
+
+.icon {
+    display: flex;
+    height: auto;
+    width: 80px;
+    margin-top: 30px;
+    margin-left: 15px;
+    align-content: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: direction;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: rgb(0, 0, 0);
+}
+
+.icon:hover {
+    position: relative;
+    transform: translateY(-5px);
+}

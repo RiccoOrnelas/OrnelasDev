@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid darkgrey;
+    padding: 10px;
+}
+
+footer h3 {
+    margin-bottom: 1em;
+    color: antiquewhite;
+}
+
+footer p {
+    color: #F2C12E;
+}
