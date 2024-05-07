@@ -1,23 +1,26 @@
 .me {
 
     display: flex;
-    flex-direction: row;
-    gap: 2cm;
+    flex-direction: column;
     justify-content: center;
     border-bottom: 2px solid darkgray;
-    margin-bottom: 40px;
+
     padding: 0px;
     width: 100%;
     height: auto;
 }
 
-.me h5 {
+.apresentation {
+    color: #FFC436;
     font-size: 20px;
+    margin-left: 20px;
 }
 
 .stack {
     color: #FFC436;
     font-family: 'Prompt', sans-serif;
+    margin-left: 20px;
+    padding: 0%;
 }
 
 .name {
@@ -25,14 +28,18 @@
     width: auto;
     align-items: center;
     margin-top: 50px;
+    margin-left: 20px;
+    padding: 0px;
 }
 
-.aboutme {
-    margin-top: 40px;
-    color: #FFC436;
+.about {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 50px;
 }
 
-.bio {
+.about p {
     padding: 0px;
     max-width: 15cm;
     color: white;
@@ -40,19 +47,105 @@
     letter-spacing: 2px;
     font-size: medium;
     margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    text-indent: 20px;
+}
+
+
+.about h5 {
+    font-size: larger;
+    color: #FFC436;
+    font-family: 'Prompt', sans-serif;
+    margin-left: 20px;
+    margin-top: 50px;
 }
 
 .img {
     border-top: 10px;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 80px;
     margin-bottom: 20px;
-    max-height: 10cm;
-    max-width: 8cm;
+    max-height: 8cm;
+    max-width: 6cm;
     border-radius: 10%;
     border: 2px solid #FFC436;
     animation: borderAnimation 50s infinite linear;
 }
 
+@media screen and (min-width:200px) and (max-width: 500px) {
+    .apresentation h2 {
+        font-size: 22px;
+    }
+
+    .apresentation h4 {
+        font-size: 16px;
+    }
+
+    .me {
+        display: grid;
+        grid-template-columns: 2fr;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0%;
+    }
+
+    .about {
+        margin-top: 2px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        margin-left: 0%;
+    }
+
+    .about h5 {
+        margin-top: 15px;
+        text-align: left;
+        font-size: 17px;
+    }
+
+    .imgborder img {
+        margin-top: 0%;
+        margin-left: 0px;
+        margin-bottom: 0%;
+    }
+
+    .img {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .bio {
+        grid-row: 5;
+        max-width: 80%;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .bio p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img {
+        max-width: 8cm;
+        max-height: 6cm;
+        margin-top: 5cm;
+    }
+
+    .me {
+        max-width: 768px;
+        gap: 0.9cm;
+        margin-right: none;
+    }
+
+    .bio {
+        max-width: 10cm;
+    }
+}
 
 @keyframes borderAnimation {
     0% {

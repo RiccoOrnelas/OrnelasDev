@@ -1,13 +1,23 @@
 <header>
     <nav>
-        <a class="brand">
+        <a routerLink="/" class="brand">
             <h2>Ornelas .Dev</h2>
         </a>
+
         <ul class="links">
-            <li><a routerLink="/"> Home </a></li>
-            <li id="ctt"><a routerLink="contact">Contato</a></li>
-            <li><a routerLink="about">Sobre mim</a></li>
-            <li class="to">
+            <li *ngIf="!showDiv; else hideDiv"><a routerLink="/"> Home </a></li>
+            <li *ngIf="!showDiv; else hideDiv" id="ctt"><a routerLink="contact">Contato</a></li>
+            <li *ngIf="!showDiv; else hideDiv"><a routerLink="about">Sobre mim</a></li>
+            <li *ngIf="showDiv; else hideDiv" class="navbar-toggle" (click)="toggleNavbar()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </li>
+
+            <li class="overlay-bg">
+                <div class="overlay" *ngIf="navbarOpen" (click)="toggleNavbar()"></div>
+            </li>
+            <li class=" to">
                 <a href="https://www.linkedin.com/in/henrique-ornelas/" target=”_blank”><img
                         src="../../../assets/linkedin.png" alt="linkedin"></a>
             </li>
@@ -18,5 +28,11 @@
             </li>
 
         </ul>
+        <ul class="navbar-items" [ngClass]="{ 'active': navbarOpen }">
+            <li><a routerLink="/" (click)="hideNavbar()"> Home </a></li>
+            <li id="ctt"><a routerLink="contact" (click)="hideNavbar()">Contato</a></li>
+            <li><a routerLink="about" (click)="hideNavbar()">Sobre mim</a></li>
+        </ul>
+        <ng-template #hideDiv></ng-template>
     </nav>
 </header>

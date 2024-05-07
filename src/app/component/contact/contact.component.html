@@ -1,1 +1,19 @@
-<p>contact works!</p>
+<div class="container">
+    <h1>
+        {{name}}
+    </h1>
+    <div class="contacts">
+        <h3><fa-icon [icon]="faPhone"></fa-icon> Telefone</h3>
+        <p>{{phoneNumber}}</p> <br>
+        <a href="https://api.whatsapp.com/send?phone=5511947575844&text=Ol%C3%A1,%20Henrique!"><img
+                src="../../../assets/DSxOAUB0raA.png" alt="WhatsApp" id="whats"></a> <br>
+        <p>(Link Direto WhatsApp)</p>
+        <h3> <fa-icon [icon]="faMail"></fa-icon> Email</h3>
+        <a href="mailto:{{emailAddress}}">
+            <p>{{emailAddress}}</p>
+        </a>
+        <h3><fa-icon [icon]="faLocal"></fa-icon> Localização</h3>
+        <p>São Bernardo do Campo - São Paulo</p>
+
+    </div>
+</div>

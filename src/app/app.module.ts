@@ -9,6 +9,8 @@ import { FooterComponent } from './component/footer/footer.component';
 import { AboutComponent } from './component/about/about.component';
 import { TecnologysComponent } from './component/tecnologys/tecnologys.component';
 import { ProjectsComponent } from './component/projects/projects.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import { ProjectsComponent } from './component/projects/projects.component';
     FooterComponent,
     AboutComponent,
     TecnologysComponent,
-    ProjectsComponent
+    ProjectsComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [
     provideClientHydration()

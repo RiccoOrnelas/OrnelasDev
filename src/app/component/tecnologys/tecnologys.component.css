@@ -5,7 +5,7 @@
     align-items: center;
     height: auto;
     width: 100%;
-
+    margin-top: 15px;
     border-bottom: 2px solid darkgray;
 }
 
@@ -34,7 +34,35 @@
     display: flex;
     flex-direction: direction;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 }
+
+@media screen and (max-width: 760px) {
+
+
+    .icons {
+        gap: 3px;
+        flex-wrap: wrap;
+    }
+
+    .icon {
+        display: flex;
+        height: auto;
+        width: 50px;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+    .techs {
+        align-items: left;
+        margin-right: none;
+
+    }
+}
+
 
 .description {
     color: rgb(0, 0, 0);
@@ -43,4 +71,68 @@
 .icon:hover {
     position: relative;
     transform: translateY(-5px);
+}
+
+.item {
+
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+    margin-right: 5px;
+    padding: 5px;
+    width: 4cm;
+}
+
+.item p {
+    color: antiquewhite;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+    .name {
+        font-size: 15px;
+    }
+
+    .icons {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons {
+        gap: 40px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item {
+        max-width: 30%;
+        min-height: 8em;
+        margin-bottom: 10px;
+        border: none;
+        margin: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+        width: 33px;
+        height: 33px;
+        padding: 0px;
+    }
+
+    .item p {
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: small;
+        margin-left: 5px;
+        margin-top: 2px;
+        text-align: center;
+    }
+
+
 }

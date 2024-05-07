@@ -1,3 +1,14 @@
 .container {
     min-height: 80dvh;
+    background-color: #172222;
+}
+
+.darkTheme {
+    background-color: #172222;
+}
+
+.lightTheme {
+    background-color: antiquewhite;
+    color: black;
+
 }

@@ -1,7 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-/dist
+
 /tmp
 /out-tsc
 /bazel-out
@@ -40,89 +40,3 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-   ../../-1.14-windows.xml
-        ../../.angular-config.json
-        ../../.bash_history
-        ../../.btfs/
-        ../../.cache/
-        ../../.condarc
-        ../../.config/
-        ../../.continuum/
-        ../../.gitconfig
-        ../../.idlerc/
-        ../../.ipynb_checkpoints/
-        ../../.ipython/
-        ../../.jupyter/
-        ../../.lesshst
-        ../../.node_repl_history
-        ../../.npmrc
-        ../../.ssh/
-        ../../.viminfo
-        ../../.vscode/
-        ../../3D Objects/
-        ../../AppData/
-        ../../Cobrinha/
-        ../../Contacts/
-        ../100 Days of Python/
-        ../689a7cd40d397bfa774e8bda4694c56c.jpg
-        ../Adobe XD.lnk
-        ../Backup/
-        ../Cifras/
-        ../Coasts.xlsx
-        ../Curso Flask/
-        "../DAR UMA ATEN\303\207\303\203O/"
-        ../Dev/
-        ../Ebd 1903/
-        ../GIMP 2.10.24.lnk
-        ../Google Chrome.lnk
-        ../IDLE (Python 3.10 64-bit).lnk
-        ../ISICLite.lnk
-        ../Icati/
-        ../MongoDBCompass.lnk
-        ../MySQL Workbench 8.0 CE.lnk
-        ../Notion.lnk
-        ../Ornelas/
-        "../Or\303\247amento Pr.xlsx"
-        ../Portfolio/
-        ../Postman.lnk
-        ../Python/
-        ../Tehillah/
-        ../Telegram.lnk
-        ../Visual Studio Code.lnk
-        ../bc5dbfdf-7f41-4494-b34f-9f75718a12aa_Panorama_Resumido_de_Ado__Jesus.pdf
-        ../desktop.ini
-        ../theWord.lnk
-        ../~$ITAL PF.docx
-        ../../Documents/
-        ../../Downloads/
-        ../../Exercicios.ipynb
-        ../../Favorites/
-        ../../Grande arquivo. txt
-        ../../IntelGraphicsProfiles/
-        ../../Links/
-        ../../Music/
-        ../../NTUSER.DAT
-        ../../NTUSER.DAT{88a4626c-4b59-11ed-94dc-8cd022929d25}.TM.blf
-        ../../NTUSER.DAT{88a4626c-4b59-11ed-94dc-8cd022929d25}.TMContainer00000000000000000001.regtrans-ms
-        ../../NTUSER.DAT{88a4626c-4b59-11ed-94dc-8cd022929d25}.TMContainer00000000000000000002.regtrans-ms
-        ../../OneDrive/
-        ../../Pictures/
-        ../../Saved Games/
-        ../../Searches/
-        ../../Untitled.ipynb
-        ../../Untitled1.ipynb
-        ../../Untitled2.ipynb
-        ../../Untitled3.ipynb
-        ../../Untitled4.ipynb
-        ../../Videos/
-        ../../anaconda3/
-        ../../battery-report.html
-        ../../curso_adonis_api_yt/
-        ../../dic_arq_lc.py
-        ../../ex9.8.py
-        ../../fparam.py
-        ../../ntuser.dat.LOG1
-        ../../ntuser.dat.LOG2
-        ../../ntuser.ini
-        ../../readme.txt
-        ../../saida_paginada.txt
