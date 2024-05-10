@@ -26,10 +26,10 @@
 
 }
 
-.card:hover {
-    position: relative;
-    transform: translateY(-5px);
-    cursor: pointer;
+.card h5 {
+    color: #FFC436;
+    margin-bottom: 3%;
+
 }
 
 .card-img {
@@ -42,6 +42,23 @@
 hr {
     color: white;
     border: 2px solid;
+}
+
+.btn {
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: rgb(20, 20, 20);
+    color: #FFC436;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    position: relative;
+    transform: translateY(-5px);
+    cursor: pointer;
+    border: #FFC436 solid 2px;
 }
 
 
@@ -78,7 +95,7 @@ hr {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .card {
         width: 100px;
     }
@@ -88,6 +105,13 @@ hr {
         height: auto;
 
     }
+
+    .btn {
+        font-size: 12px;
+        padding: 4px;
+        font-weight: bold;
+    }
+
 
 
 }

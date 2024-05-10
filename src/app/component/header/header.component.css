@@ -168,7 +168,7 @@ nav {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
     .brand H2 {
         font-size: 25px;
     }

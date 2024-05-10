@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { HostListener } from '@angular/core';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,7 +13,7 @@ export class HeaderComponent {
   lightMode = true
   navbarOpen = false
   showDiv = false;
-
+  downIcon = faDownload
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.showDiv = window.innerWidth < 500; // Exibir a div se a largura da tela for maior que 768 pixels
