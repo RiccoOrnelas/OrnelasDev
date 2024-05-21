@@ -9,8 +9,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  darkMode = true
-  lightMode = true
+
   navbarOpen = false
   showDiv = false;
   downIcon = faDownload
