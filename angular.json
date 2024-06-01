@@ -23,6 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "OrnelasDev",
             "outputPath": "dist/ornelas-dev",
             "index": "src/index.html",
             "browser": "src/main.ts",
