@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/RiccoOrnelas/OrnelasDev/tree/Main/dist/ornelas-dev/browser/",
+            "baseHref": "/RiccoOrnelas/OrnelasDev/",
             "outputPath": "dist/ornelas-dev",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -32,10 +32,10 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "dist/ornelas-dev/browser/assets"
+              "src/assets"
             ],
             "styles": [
-              "dist/ornelas-dev/browser/styles-JS6DPDQE.css"
+              "src/styles.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
