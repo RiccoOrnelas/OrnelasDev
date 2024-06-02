@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:ornelasDev": "node dist/ornelas-dev/server/server.mjs",
-    "build:prod": "ng build --configuration production --base-href=/OrnelasDev/"
+    "build:prod": "ng build --configuration production --base-href=/RiccoOrnelas/OrnelasDev/"
   },
   "private": true,
   "dependencies": {
