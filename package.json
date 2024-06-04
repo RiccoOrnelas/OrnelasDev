@@ -24,6 +24,7 @@
     "@angular/ssr": "^17.0.9",
     "@fortawesome/angular-fontawesome": "^0.14.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@scullyio/init": "^2.1.21",
     "angular-cli-ghpages": "^2.0.0-beta.2",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
