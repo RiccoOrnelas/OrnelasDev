@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Shadows+Into+Light&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap');
+@font-face {
+    font-family: 'Stick No Bills';
+    src: url('../../fonts/StickNoBills.ttf') format('truetype');
+}
 
 * {
     background-color: rgb(28, 27, 27);
@@ -14,10 +15,7 @@
     width: 30px;
     height: 3px;
     margin-top: 3px;
-
     border-radius: 4px;
-
-
 }
 
 header {
