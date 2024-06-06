@@ -15,7 +15,7 @@ export class HeaderComponent {
   downIcon = faDownload
   @HostListener('window:resize', ['$event'])
   onResize() {
-    this.showDiv = window.innerWidth < 500; // Exibir a div se a largura da tela for maior que 768 pixels
+    this.showDiv = window.innerWidth < 780; // Exibir a div se a largura da tela for maior que 768 pixels
   }
 
   toggleNavbar() {
