@@ -21,6 +21,7 @@
 p {
     color: antiquewhite;
     font-weight: bold;
+    min-height: 100%
 }
 
 .contacts img {

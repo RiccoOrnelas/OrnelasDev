@@ -8,6 +8,7 @@ footer {
     align-items: center;
     border-top: 2px solid darkgrey;
     padding: 10px;
+    margin-bottom: 0;
 }
 
 footer h3 {
