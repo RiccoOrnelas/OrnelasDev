@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OnInit } from '@angular/core';
 import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { HostListener } from '@angular/core';
@@ -13,6 +14,9 @@ export class HeaderComponent {
   navbarOpen = false
   showDiv = false;
   downIcon = faDownload
+  ngOnInit() {
+    this.onResize()
+  }
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.showDiv = window.innerWidth < 780; // Exibir a div se a largura da tela for maior que 768 pixels
