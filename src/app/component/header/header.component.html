@@ -8,7 +8,8 @@
             <li *ngIf="!showDiv; else hideDiv"><a routerLink="/"> Home </a></li>
             <li *ngIf="!showDiv; else hideDiv" id="ctt"><a routerLink="contact">Contato</a></li>
             <li *ngIf="!showDiv; else hideDiv"><a routerLink="about">Sobre mim</a></li>
-            <li *ngIf="!showDiv; else hideDiv"><a href="../../../assets/Henrique CV.pdf" download="Henrique_CV">CV
+            <li *ngIf="!showDiv; else hideDiv"><a href="../../../assets/CurrículumHenrique.pdf"
+                    download="Henrique_CV">CV
                     <fa-icon [icon]="downIcon"></fa-icon> </a></li>
             <li *ngIf="showDiv; else hideDiv" class="navbar-toggle" (click)="toggleNavbar()">
                 <div class="bar"></div>
@@ -34,7 +35,7 @@
             <li><a routerLink="/" (click)="hideNavbar()"> Home </a></li>
             <li id="ctt"><a routerLink="contact" (click)="hideNavbar()">Contato</a></li>
             <li><a routerLink="about" (click)="hideNavbar()">Sobre mim</a></li>
-            <li><a href="../../../assets/Henrique CV.pdf" download="Henrique_CV">CV
+            <li><a href="../../../assets/CurrículumHenrique.pdf" download="Henrique_CV">CV
                     <fa-icon [icon]="downIcon"></fa-icon> </a></li>
 
         </ul>

@@ -19,7 +19,7 @@
 }
 
 .card {
-    max-width: 5cm;
+    max-width: 7cm;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,12 +83,12 @@ hr {
 
 
     .card {
-        max-width: 4cm;
+        max-width: 6cm;
         height: auto;
     }
 
     .card-img {
-        width: 4cm;
+        width: 6cm;
         height: auto;
 
     }

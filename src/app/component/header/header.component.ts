@@ -10,7 +10,6 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
   navbarOpen = false
   showDiv = false;
   downIcon = faDownload
@@ -19,7 +18,7 @@ export class HeaderComponent {
   }
   @HostListener('window:resize', ['$event'])
   onResize() {
-    this.showDiv = window.innerWidth < 780; // Exibir a div se a largura da tela for maior que 768 pixels
+    this.showDiv = window.innerWidth < 780;
   }
 
   toggleNavbar() {
