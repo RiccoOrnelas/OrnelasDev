@@ -99,6 +99,15 @@
         font-size: 15px;
     }
 
+    .techs {
+        height: 5cm;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0%;
+
+    }
+
     .icons {
         align-items: center;
         justify-content: center;
@@ -115,12 +124,11 @@
 
     .item {
         max-width: 30%;
-        min-height: 8em;
         margin-bottom: 10px;
         border: none;
         margin: 0px;
         padding-top: 0px;
-        margin-top: 0px;
+        margin-top: none;
         width: 33px;
         height: 33px;
         padding: 0px;

@@ -4,6 +4,7 @@ import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { HostListener } from '@angular/core';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { Inject } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -13,6 +14,10 @@ export class HeaderComponent {
   navbarOpen = false
   showDiv = false;
   downIcon = faDownload
+
+
+  constructor() { }
+
   ngOnInit() {
     this.onResize()
   }

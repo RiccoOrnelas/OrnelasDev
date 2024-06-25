@@ -97,12 +97,24 @@ hr {
 
 
 @media screen and (max-width: 550px) {
+    .cards {
+        flex-direction: column;
+    }
+
     .card {
-        width: 100px;
+        width: 300px;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
     }
 
     .card-img {
-        width: 100px;
+        width: 175px;
         height: auto;
 
     }
@@ -112,7 +124,4 @@ hr {
         padding: 4px;
         font-weight: bold;
     }
-
-
-
 }

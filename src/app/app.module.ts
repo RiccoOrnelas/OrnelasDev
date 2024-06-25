@@ -27,7 +27,9 @@ import { CommonModule } from '@angular/common';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    CommonModule,
+
   ],
   providers: [
     provideClientHydration()
