@@ -48,10 +48,11 @@ hr {
     margin-top: 10px;
     cursor: pointer;
     background-color: rgb(20, 20, 20);
-    color: #FFC436;
-    border-radius: 10px;
+    color: #f7f1e3;
+    border-radius: 5px;
     padding: 5px;
     font-weight: bold;
+    width: 200px;
 }
 
 .btn:hover {
@@ -59,6 +60,7 @@ hr {
     transform: translateY(-5px);
     cursor: pointer;
     border: #FFC436 solid 2px;
+    color: #FFC436;
 }
 
 
