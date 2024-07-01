@@ -136,4 +136,8 @@ hr {
         padding: 4px;
         font-weight: bold;
     }
+
+    .foot_btn {
+        margin-bottom: 20px;
+    }
 }
