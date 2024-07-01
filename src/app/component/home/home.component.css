@@ -77,12 +77,20 @@
 }
 
 @media screen and (min-width:200px) and (max-width: 500px) {
+    .name {
+        margin-top: 10px;
+    }
+
+    .apresentation {}
+
     .apresentation h2 {
         font-size: 22px;
     }
 
     .apresentation h4 {
         font-size: 16px;
+        margin-bottom: 10px;
+
     }
 
     .me {

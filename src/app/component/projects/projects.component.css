@@ -97,6 +97,16 @@ hr {
 
 
 @media screen and (max-width: 550px) {
+
+    .projects {
+        margin-top: 10px;
+        padding: 0%;
+    }
+
+    .stack {
+        margin-top: 0%;
+    }
+
     .cards {
         flex-direction: column;
     }
