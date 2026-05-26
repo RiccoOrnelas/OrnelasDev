@@ -1,44 +1,69 @@
 <header>
     <nav>
         <a routerLink="/" class="brand">
-            <h2>Ornelas .Dev</h2>
+            <img src="assets/logo.svg">
         </a>
 
         <ul class="links">
-            <li *ngIf="!showDiv; else hideDiv"><a routerLink="/"> Home </a></li>
-            <li *ngIf="!showDiv; else hideDiv" id="ctt"><a routerLink="contact">Contato</a></li>
-            <li *ngIf="!showDiv; else hideDiv"><a routerLink="about">Sobre mim</a></li>
-            <li *ngIf="!showDiv; else hideDiv"><a href="../../../assets/CurrículumHenrique.pdf"
-                    download="Henrique_CV">CV
-                    <fa-icon [icon]="downIcon"></fa-icon> </a></li>
-            <li *ngIf="showDiv; else hideDiv" class="navbar-toggle" (click)="toggleNavbar()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </li>
+            <!-- Desktop nav links -->
+            <ng-container *ngIf="!showDiv; else mobileToggle">
+                <li><a routerLink="/">{{ 'nav.home' | translate }}</a></li>
+                <li id="ctt"><a routerLink="contact">{{ 'nav.contact' | translate }}</a></li>
+                <li><a routerLink="about">{{ 'nav.about' | translate }}</a></li>
+                <li>
+                    <a href="../../../assets/CurrículumHenrique.pdf" download="Henrique_CV">
+                        {{ 'nav.cv' | translate }} <fa-icon [icon]="downIcon"></fa-icon>
+                    </a>
+                </li>
+                <!-- Bandeiras desktop — sempre visíveis quando não mobile -->
+                <li class="lang-switcher">
+                    <button *ngFor="let f of flags" class="flag-btn" [class.active]="ts.currentLang === f.lang"
+                        (click)="setLang(f.lang)" [title]="f.label">
+                        {{ f.emoji }}
+                    </button>
+                </li>
+            </ng-container>
 
-            <li class="overlay-bg">
-                <div class="overlay" *ngIf="navbarOpen" (click)="toggleNavbar()"></div>
-            </li>
-            <li class=" to">
-                <a href="https://www.linkedin.com/in/henrique-ornelas/" target=”_blank”><img
-                        src="../../../assets/linkedin.png" alt="linkedin"></a>
+            <ng-template #mobileToggle>
+                <li class="navbar-toggle" (click)="toggleNavbar()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </li>
+            </ng-template>
+
+            <li class="to">
+                <a href="https://www.linkedin.com/in/henrique-ornelas/" target="_blank">
+                    <img src="../../../assets/linkedin.png" alt="linkedin">
+                </a>
             </li>
             <li class="to">
                 <a rel="noopener" href="https://github.com/RiccoOrnelas/" target="_blank">
                     <img src="../../../assets/github.png" alt="github">
                 </a>
             </li>
-
         </ul>
+
+        <!-- Overlay para fechar menu ao clicar fora -->
+        <div class="overlay" *ngIf="navbarOpen" (click)="hideNavbar()"></div>
+
+        <!-- Mobile menu -->
         <ul class="navbar-items" [ngClass]="{ 'active': navbarOpen }">
-            <li><a routerLink="/" (click)="hideNavbar()"> Home </a></li>
-            <li id="ctt"><a routerLink="contact" (click)="hideNavbar()">Contato</a></li>
-            <li><a routerLink="about" (click)="hideNavbar()">Sobre mim</a></li>
-            <li><a href="../../../assets/CurrículumHenrique.pdf" download="Henrique_CV">CV
-                    <fa-icon [icon]="downIcon"></fa-icon> </a></li>
-
+            <li><a routerLink="/" (click)="hideNavbar()">{{ 'nav.home' | translate }}</a></li>
+            <li id="ctt"><a routerLink="contact" (click)="hideNavbar()">{{ 'nav.contact' | translate }}</a></li>
+            <li><a routerLink="about" (click)="hideNavbar()">{{ 'nav.about' | translate }}</a></li>
+            <li>
+                <a href="../../../assets/CurrículumHenrique.pdf" download="Henrique_CV">
+                    {{ 'nav.cv' | translate }} <fa-icon [icon]="downIcon"></fa-icon>
+                </a>
+            </li>
+            <!-- Bandeiras no menu mobile -->
+            <li class="lang-switcher mobile-flags">
+                <button *ngFor="let f of flags" class="flag-btn" [class.active]="ts.currentLang === f.lang"
+                    (click)="setLang(f.lang); hideNavbar()" [title]="f.label">
+                    {{ f.emoji }} <span class="flag-label">{{ f.label }}</span>
+                </button>
+            </li>
         </ul>
-        <ng-template #hideDiv></ng-template>
     </nav>
 </header>

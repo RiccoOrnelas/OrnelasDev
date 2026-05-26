@@ -9,6 +9,9 @@ import { FooterComponent } from './component/footer/footer.component';
 import { AboutComponent } from './component/about/about.component';
 import { TecnologysComponent } from './component/tecnologys/tecnologys.component';
 import { ProjectsComponent } from './component/projects/projects.component';
+import { AutomationsComponent } from './component/automations/automations.component';
+import { GalleryModalComponent } from './component/gallery-modal/gallery-modal.component';
+import { TranslatePipe } from './pipes/translate.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
 
@@ -22,14 +25,15 @@ import { CommonModule } from '@angular/common';
     AboutComponent,
     TecnologysComponent,
     ProjectsComponent,
-
+    AutomationsComponent,
+    GalleryModalComponent,
+    TranslatePipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     CommonModule,
-
   ],
   providers: [
     provideClientHydration()

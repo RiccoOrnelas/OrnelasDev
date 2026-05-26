@@ -1,0 +1,28 @@
+<div class="modal-backdrop" *ngIf="show && item" (click)="onBackdropClick($event)">
+  <div class="modal-box">
+    <button class="close-btn" (click)="close()" aria-label="Fechar">✕</button>
+    <img [src]="item!.image" [alt]="item!.title" class="modal-img">
+    <div class="modal-content">
+      <h3 class="modal-title">{{ item!.title }}</h3>
+
+      <div class="tags" *ngIf="item!.tags && item!.tags!.length > 0">
+        <span class="tag" *ngFor="let tag of item!.tags">{{ tag }}</span>
+      </div>
+
+      <p class="modal-description">{{ item!.description }}</p>
+
+      <div class="modal-actions">
+        <a *ngIf="item!.githubUrl" [href]="item!.githubUrl" target="_blank" rel="noopener noreferrer">
+          <button class="btn-action btn-github">{{ 'common.github' | translate }}</button>
+        </a>
+        <a *ngIf="item!.demoUrl" [href]="item!.demoUrl" target="_blank" rel="noopener noreferrer">
+          <button class="btn-action btn-demo">{{ 'common.visit' | translate }}</button>
+        </a>
+        <button *ngIf="item!.comingSoon && !item!.githubUrl && !item!.demoUrl"
+                class="btn-action btn-soon" disabled>
+          {{ 'common.comingSoon' | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
