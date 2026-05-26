@@ -1,9 +1,10 @@
-.projects {
+.automations {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   padding: 30px 0 40px;
+  border-top: 2px solid #333;
 }
 
 .stack {
@@ -19,6 +20,13 @@
   position: relative;
   transform: translateY(-5px);
   cursor: default;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  margin-bottom: 10px;
 }
 
 /* ── Grid de cards ── */
@@ -164,7 +172,7 @@
 }
 
 @media screen and (max-width: 550px) {
-  .projects { padding: 20px 0 30px; }
+  .automations { padding: 20px 0 30px; }
   .cards { flex-direction: column; align-items: center; gap: 24px; }
   .card { width: 300px; max-width: 300px; }
   .card-thumb { width: 175px; }

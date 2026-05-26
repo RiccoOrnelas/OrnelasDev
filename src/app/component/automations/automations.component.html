@@ -1,8 +1,9 @@
-<section class="projects">
-  <h3 class="stack">{{ 'sections.projects' | translate }}</h3>
+<section class="automations">
+  <h3 class="stack">{{ 'sections.automations' | translate }}</h3>
+  <p class="subtitle">{{ 'sections.automationsSubtitle' | translate }}</p>
 
   <div class="cards">
-    <div class="card" *ngFor="let item of projects" (click)="openModal(item)">
+    <div class="card" *ngFor="let item of automations" (click)="openModal(item)">
       <div class="card-thumb">
         <img [src]="item.image" [alt]="item.title" class="card-img">
         <div class="card-overlay">

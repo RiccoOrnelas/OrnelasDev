@@ -1,39 +1,42 @@
 <section class="techs">
-    <h3 class="stack">Tecnologias</h3>
-    <div class="icons">
-        <div class='item'>
-            <img src="../../../assets/html.png" alt="html" class="icon" title="HTML 5">
-            <p>HTML5</p>
 
-        </div>
-        <div class='item'>
-            <img src="../../../assets/css.png" alt="css" class="icon" title="CSS">
-            <p> CSS3</p>
-        </div>
+  <div class="techs-header">
+    <h3 class="section-title">{{ 'sections.technologies' | translate }}</h3>
+    <div class="title-line"></div>
+  </div>
 
-        <div class='item'>
-            <img src="../../../assets/js.png" alt="js" class="icon" title="JavaScript">
-            <p>JavaScript</p>
+  <!-- Frontend -->
+  <div class="category-block">
+    <span class="cat-label cat-frontend">⬡ Frontend</span>
+    <div class="tech-grid">
+      <div
+        class="tech-card"
+        *ngFor="let tech of frontend; let i = index"
+        [style.--tech-color]="tech.color"
+        [style.animation-delay]="(i * 0.08) + 's'">
+        <div class="icon-wrap">
+          <img [src]="tech.icon" [alt]="tech.name" class="tech-icon">
         </div>
-        <div class='item'>
-            <img src="../../../assets/Node.png" alt="node" class="icon" title="NodeJS">
-            <p>NodeJs</p>
-        </div>
-        <div class='item'>
-            <img src="../../../assets/react.png" alt="react" class="icon" title="React">
-            <p>ReactJS</p>
-        </div>
-        <div class='item'>
-            <img src="../../../assets/angular.png" alt="angular" class="icon" title="Angular">
-            <p>Angular</p>
-        </div>
-        <div class='item'>
-            <img src="../../../assets/py.png" alt="python" class="icon" title="Python">
-            <p>Python</p>
-        </div>
-        <div class='item'>
-            <img src="../../../assets/Flask.png" alt="flask" class="icon" title="flask">
-            <p>Flask</p>
-        </div>
+        <span class="tech-name">{{ tech.name }}</span>
+      </div>
     </div>
+  </div>
+
+  <!-- Backend -->
+  <div class="category-block">
+    <span class="cat-label cat-backend">⬡ Backend</span>
+    <div class="tech-grid tech-grid--backend">
+      <div
+        class="tech-card"
+        *ngFor="let tech of backend; let i = index"
+        [style.--tech-color]="tech.color"
+        [style.animation-delay]="((frontend.length + i) * 0.08) + 's'">
+        <div class="icon-wrap">
+          <img [src]="tech.icon" [alt]="tech.name" class="tech-icon">
+        </div>
+        <span class="tech-name">{{ tech.name }}</span>
+      </div>
+    </div>
+  </div>
+
 </section>

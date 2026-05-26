@@ -5,12 +5,12 @@ import { GalleryItem } from '../../models/gallery-item.model';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  selector: 'app-automations',
+  templateUrl: './automations.component.html',
+  styleUrl: './automations.component.css'
 })
-export class ProjectsComponent implements OnInit, OnDestroy {
-  projects: GalleryItem[] = [];
+export class AutomationsComponent implements OnInit, OnDestroy {
+  automations: GalleryItem[] = [];
   selectedItem: GalleryItem | null = null;
   showModal = false;
 
@@ -22,9 +22,9 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
-    this.projects = this.ts.getProjects();
+    this.automations = this.ts.getAutomations();
     this.langSub = this.ts.lang$.subscribe(() => {
-      this.projects = this.ts.getProjects();
+      this.automations = this.ts.getAutomations();
     });
   }
 
