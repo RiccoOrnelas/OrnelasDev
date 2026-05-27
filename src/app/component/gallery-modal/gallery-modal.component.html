@@ -1,7 +1,9 @@
 <div class="modal-backdrop" *ngIf="show && item" (click)="onBackdropClick($event)">
   <div class="modal-box">
     <button class="close-btn" (click)="close()" aria-label="Fechar">✕</button>
-    <img [src]="item!.image" [alt]="item!.title" class="modal-img">
+    <div class="modal-img-wrap">
+      <img [src]="item!.image" [alt]="item!.title" class="modal-img">
+    </div>
     <div class="modal-content">
       <h3 class="modal-title">{{ item!.title }}</h3>
 

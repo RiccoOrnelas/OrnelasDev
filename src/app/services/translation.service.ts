@@ -16,8 +16,8 @@ const STRINGS: Record<Lang, Record<string, any>> = {
 Sou apaixonado por código que resolve problemas reais. Pra mim, a parte mais interessante de programar não é a stack em si — é o que ela destrava: um fluxo que ficou mais simples, um time que entrega mais rápido, um produto que cresce. Por isso gosto de entender o problema antes de escrever a primeira linha, e gosto ainda mais quando consigo acompanhar a solução até ela estar rodando em produção.
 Hoje busco oportunidades remotas com times internacionais, contribuindo com código, ideias e as perguntas certas pra destravar entregas. Se você tem um projeto, um time ou uma ideia em mente — vamos conversar e construir algo incrível juntos.`},
     sections: {
-      technologies: 'Tecnologias',
-      projects: 'Meus Projetos',
+      technologies: '⚡ Stacks',
+      projects: '🚀 Projetos',
       automations: '🤖 Automações',
       automationsSubtitle: 'Bots e scripts que automatizam tarefas do dia a dia'
     },
@@ -36,7 +36,7 @@ Hoje busco oportunidades remotas com times internacionais, contribuindo com cód
       p4: `Minha meta é simples — ser um desenvolvedor cada vez melhor, aplicando melhoria contínua não só nas aplicações, mas na vida. Acredito que tudo coopera pro bem, e que cada acerto e erro até aqui formou o profissional que sou hoje.`,
       p5: `Fora do código, gosto de treinar, ler e escutar podcasts sobre assuntos que me edificam espiritual e pessoalmente. Sou violonista amador e surfista iniciante — duas coisas que me lembram que melhorar leva tempo, e que tudo bem.`
     },
-    footer: { message: 'É uma honra te ter por aqui' }
+    footer: { message: 'Tecnologia com Propósito' }
   },
 
   en: {
@@ -47,8 +47,8 @@ Hoje busco oportunidades remotas com times internacionais, contribuindo com cód
       bio: `A Full Stack Developer! Passionate about programming, delivering end-to-end software development solutions. From responsive pages using leading Frameworks like Angular and ReactJS with JavaScript, to Back-End APIs using NodeJS or Python!    My mission is to help people and companies create innovative solutions through technology — let's build something incredible together. It would be a great joy to contribute to your team or project!`
     },
     sections: {
-      technologies: 'Technologies',
-      projects: 'My Projects',
+      technologies: '⚡ Stacks',
+      projects: '🚀 My Projects',
       automations: '🤖 Automations',
       automationsSubtitle: 'Bots and scripts that automate day-to-day tasks'
     },
@@ -67,7 +67,7 @@ Hoje busco oportunidades remotas com times internacionais, contribuindo com cód
       p4: `My goal is simple — to be an ever-better developer, applying continuous improvement not just to applications, but to life. I believe everything works together for good, and that every success and mistake up to now has shaped the professional I am today.`,
       p5: `Outside of code, I enjoy working out, reading, and listening to podcasts on topics that build me up spiritually and personally. I'm an amateur guitarist and beginner surfer — two things that remind me that improvement takes time, and that's okay.`
     },
-    footer: { message: "It's an honor to have you here" }
+    footer: { message: 'Technology with Purpose' }
   },
 
   es: {
@@ -78,8 +78,8 @@ Hoje busco oportunidades remotas com times internacionais, contribuindo com cód
       bio: `¡Un Desarrollador Full Stack! Apasionado por la programación, ofreciendo soluciones de desarrollo de software de extremo a extremo. Desde páginas responsivas usando los principales Frameworks del mercado como Angular y ReactJS con JavaScript, hasta APIs en el Back-End usando NodeJS o Python!    Mi misión es ayudar a personas y empresas a crear soluciones innovadoras a través de la tecnología — construyamos algo increíble juntos. Para mí sería una gran alegría contribuir con tu equipo o proyecto.`
     },
     sections: {
-      technologies: 'Tecnologías',
-      projects: 'Mis Proyectos',
+      technologies: '⚡ Stacks',
+      projects: '🚀 Mis Proyectos',
       automations: '🤖 Automatizaciones',
       automationsSubtitle: 'Bots y scripts que automatizan tareas del día a día'
     },
@@ -98,7 +98,7 @@ Hoje busco oportunidades remotas com times internacionais, contribuindo com cód
       p4: `Mi meta es simple — ser un desarrollador cada vez mejor, aplicando la mejora continua no solo en las aplicaciones, sino en la vida. Creo que todo coopera para bien, y que cada acierto y error hasta aquí formó al profesional que soy hoy.`,
       p5: `Fuera del código, me gusta entrenar, leer y escuchar podcasts sobre temas que me edifican espiritual y personalmente. Soy guitarrista aficionado y surfista principiante — dos cosas que me recuerdan que mejorar lleva tiempo, y que está bien.`
     },
-    footer: { message: 'Es un honor tenerte aquí' }
+    footer: { message: 'Tecnología con Propósito' }
   }
 };
 
@@ -201,14 +201,14 @@ const AUTOMATIONS: Record<Lang, GalleryItem[]> = {
     {
       title: 'Daily Planner Bot',
       description: 'Bot pessoal de produtividade que lê tarefas semanais de uma planilha Excel e envia um briefing diário formatado no Telegram às 7h da manhã (horário de Brasília). Organiza as tarefas por categoria com emojis e roda 100% gratuito via GitHub Actions — sem servidor.',
-      image: 'assets/Carimbo-em-Breve.png',
+      image: 'assets/brainOrganization.png',
       tags: ['Python', 'Telegram API', 'GitHub Actions', 'openpyxl'],
       githubUrl: 'https://github.com/RiccoOrnelas/brainOrganization'
     },
     {
       title: 'HackerNews Daily Bot',
       description: 'Bot que coleta e entrega diariamente as 5 principais histórias do Hacker News + 15 vagas de emprego diretamente no Telegram às 6h30 (horário de Brasília). Sem algoritmos, sem feeds curados — só o que importa. Funciona via GitHub Actions ou Railway, sem custo de servidor.',
-      image: 'assets/Carimbo-em-Breve.png',
+      image: 'assets/dailynews.png',
       tags: ['Node.js', 'Telegram API', 'GitHub Actions', 'axios'],
       githubUrl: 'https://github.com/RiccoOrnelas/hackerNews_telegram_automation'
     },
@@ -224,14 +224,14 @@ const AUTOMATIONS: Record<Lang, GalleryItem[]> = {
     {
       title: 'Daily Planner Bot',
       description: 'Personal productivity bot that reads weekly tasks from an Excel spreadsheet and sends a formatted daily briefing on Telegram at 7am (Brasília time). Organizes tasks by category with emojis and runs 100% free via GitHub Actions — no server needed.',
-      image: 'assets/Carimbo-em-Breve.png',
+      image: 'assets/brainOrganization.png',
       tags: ['Python', 'Telegram API', 'GitHub Actions', 'openpyxl'],
       githubUrl: 'https://github.com/RiccoOrnelas/brainOrganization'
     },
     {
       title: 'HackerNews Daily Bot',
       description: 'Bot that daily collects and delivers the top 5 Hacker News stories + 15 job listings directly on Telegram at 6:30am (Brasília time). No algorithms, no curated feeds — just what matters. Works via GitHub Actions or Railway with no server cost.',
-      image: 'assets/Carimbo-em-Breve.png',
+      image: 'assets/dailynews.png',
       tags: ['Node.js', 'Telegram API', 'GitHub Actions', 'axios'],
       githubUrl: 'https://github.com/RiccoOrnelas/hackerNews_telegram_automation'
     },
@@ -247,14 +247,14 @@ const AUTOMATIONS: Record<Lang, GalleryItem[]> = {
     {
       title: 'Daily Planner Bot',
       description: 'Bot personal de productividad que lee tareas semanales de una hoja de cálculo Excel y envía un briefing diario formateado en Telegram a las 7am (hora de Brasilia). Organiza las tareas por categoría con emojis y funciona 100% gratis vía GitHub Actions — sin servidor.',
-      image: 'assets/Carimbo-em-Breve.png',
+      image: 'assets/brainOrganization.png',
       tags: ['Python', 'Telegram API', 'GitHub Actions', 'openpyxl'],
       githubUrl: 'https://github.com/RiccoOrnelas/brainOrganization'
     },
     {
       title: 'HackerNews Daily Bot',
       description: 'Bot que recopila y entrega diariamente las 5 principales historias de Hacker News + 15 ofertas de empleo en Telegram a las 6:30am (hora de Brasilia). Sin algoritmos, sin feeds curados — solo lo que importa. Funciona vía GitHub Actions o Railway sin costo de servidor.',
-      image: 'assets/Carimbo-em-Breve.png',
+      image: 'assets/dailynews.png',
       tags: ['Node.js', 'Telegram API', 'GitHub Actions', 'axios'],
       githubUrl: 'https://github.com/RiccoOrnelas/hackerNews_telegram_automation'
     },
