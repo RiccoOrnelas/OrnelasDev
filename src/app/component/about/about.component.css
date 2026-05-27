@@ -7,24 +7,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #f5f4f0;
+    padding-bottom: 64px;
 }
 
 .about h2 {
     margin-top: 5%;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: 0.06em;
-    color: #10b981;
-    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #0d9668;
 }
 
 .text {
     width: 60dvw;
     font-family: "Roboto Serif", serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
         "wdth" 100,
@@ -34,14 +36,15 @@
 
 .text p {
     text-indent: 20px;
-    color: #d1d5db;
-    line-height: 1.75;
-    margin-bottom: 18px;
+    color: #1c1c1c;
+    line-height: 1.85;
+    margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 850px) {
     .text {
-        width: 80dvw;
+        width: 82dvw;
     }
 }
 
@@ -52,5 +55,6 @@
 
     .text p {
         font-size: 15px;
+        line-height: 1.75;
     }
 }
