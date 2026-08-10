@@ -44,7 +44,9 @@ Hoje busco oportunidades remotas com times internacionais, contribuindo com cód
     home: {
       role: 'Full Stack Developer',
       aboutTitle: 'About me',
-      bio: `A Full Stack Developer! Passionate about programming, delivering end-to-end software development solutions. From responsive pages using leading Frameworks like Angular and ReactJS with JavaScript, to Back-End APIs using NodeJS or Python!    My mission is to help people and companies create innovative solutions through technology — let's build something incredible together. It would be a great joy to contribute to your team or project!`
+      bio: `I'm Henrique Ornelas, a fullstack developer with around 4 years of experience building end-to-end products — from responsive interfaces in React and Next.js to robust APIs in Node.js and Python.
+I'm passionate about code that solves real problems. To me, the most interesting part of programming isn't the stack itself — it's what it unlocks: a simpler workflow, a team that delivers faster, a product that grows. That's why I like understanding the problem before writing the first line, and I like it even more when I can follow the solution through to production.
+Today I'm looking for remote opportunities with international teams, contributing code, ideas, and the right questions to help move projects forward. If you have a project, a team, or an idea in mind — let's talk and build something incredible together.`
     },
     sections: {
       technologies: '⚡ Stacks',
@@ -75,7 +77,9 @@ Hoje busco oportunidades remotas com times internacionais, contribuindo com cód
     home: {
       role: 'Desarrollador Full Stack',
       aboutTitle: 'Sobre mí',
-      bio: `¡Un Desarrollador Full Stack! Apasionado por la programación, ofreciendo soluciones de desarrollo de software de extremo a extremo. Desde páginas responsivas usando los principales Frameworks del mercado como Angular y ReactJS con JavaScript, hasta APIs en el Back-End usando NodeJS o Python!    Mi misión es ayudar a personas y empresas a crear soluciones innovadoras a través de la tecnología — construyamos algo increíble juntos. Para mí sería una gran alegría contribuir con tu equipo o proyecto.`
+      bio: `Soy Henrique Ornelas, desarrollador fullstack con cerca de 4 años de experiencia construyendo productos de extremo a extremo — desde interfaces responsivas en React y Next.js hasta APIs robustas en Node.js y Python.
+Me apasiona el código que resuelve problemas reales. Para mí, la parte más interesante de programar no es la stack en sí — es lo que permite: un flujo más sencillo, un equipo que entrega más rápido, un producto que crece. Por eso me gusta entender el problema antes de escribir la primera línea, y me gusta aún más poder acompañar la solución hasta que está funcionando en producción.
+Hoy busco oportunidades remotas con equipos internacionales, contribuyendo con código, ideas y las preguntas adecuadas para impulsar las entregas. Si tienes un proyecto, un equipo o una idea en mente — hablemos y construyamos algo increíble juntos.`
     },
     sections: {
       technologies: '⚡ Stacks',
@@ -270,7 +274,7 @@ const AUTOMATIONS: Record<Lang, GalleryItem[]> = {
 // ── Serviço ────────────────────────────────────────────────────
 @Injectable({ providedIn: 'root' })
 export class TranslationService {
-  private _lang = new BehaviorSubject<Lang>('pt');
+  private _lang = new BehaviorSubject<Lang>('en');
   readonly lang$ = this._lang.asObservable();
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {

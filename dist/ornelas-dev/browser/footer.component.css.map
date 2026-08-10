@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/component/footer/footer.component.css"],
-  "sourcesContent": ["* {\r\n    background-color: rgb(20, 20, 20);\r\n}\r\n\r\nfooter {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    border-top: 2px solid darkgrey;\r\n    padding: 10px;\r\n    margin-bottom: 0;\r\n}\r\n\r\nfooter h3 {\r\n    margin-bottom: 1em;\r\n    color: antiquewhite;\r\n}\r\n\r\nfooter p {\r\n    color: #F2C12E;\r\n}"],
-  "mappings": ";AAAA;AACI,oBAAkB,IAAI,EAAE,EAAE,EAAE,EAAE;AAClC;AAEA;AACI,WAAS;AACT,kBAAgB;AAChB,eAAa;AACb,cAAY,IAAI,MAAM;AACtB,WAAS;AACT,iBAAe;AACnB;AAEA,OAAO;AACH,iBAAe;AACf,SAAO;AACX;AAEA,OAAO;AACH,SAAO;AACX;",
-  "names": []
-}
