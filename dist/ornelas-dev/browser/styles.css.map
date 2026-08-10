@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/styles.css"],
-  "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\r\n* {\r\n    padding: 0px;\r\n    margin: 0px;\r\n}"],
-  "mappings": ";AACA;AACI,WAAS;AACT,UAAQ;AACZ;",
-  "names": []
-}
