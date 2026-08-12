@@ -111,10 +111,10 @@ const PROJECTS: Record<Lang, GalleryItem[]> = {
   pt: [
     {
       title: 'Bible is Open',
-      description: 'Uma aplicação no estilo de blog para compartilhar reflexões bíblicas. Desenvolvida com Angular no front-end e NodeJS no back-end, com banco de dados para armazenar os conteúdos publicados. Projeto em fase final de produção.',
+      description: 'SaaS no estilo blog para compartilhar reflexões bíblicas, desenvolvido com Next.js e equipado com poderosas integrações e ferramentas.',
       image: 'assets/bibleisopen.png',
-      tags: ['Angular', 'NodeJS'],
-      comingSoon: true
+      tags: ['Next.js', 'SaaS'],
+      demoUrl: 'https://bible-is-open-v.vercel.app/'
     },
     {
       title: 'RT Polimento Técnico',
@@ -141,10 +141,10 @@ const PROJECTS: Record<Lang, GalleryItem[]> = {
   en: [
     {
       title: 'Bible is Open',
-      description: 'A blog-style application for sharing biblical reflections. Built with Angular on the front-end and NodeJS on the back-end, with a database to store published content. Project in final production phase.',
+      description: 'A blog-style SaaS for sharing biblical reflections, built with Next.js and equipped with powerful integrations and tools.',
       image: 'assets/bibleisopen.png',
-      tags: ['Angular', 'NodeJS'],
-      comingSoon: true
+      tags: ['Next.js', 'SaaS'],
+      demoUrl: 'https://bible-is-open-v.vercel.app/'
     },
     {
       title: 'RT Technical Polishing',
@@ -171,10 +171,10 @@ const PROJECTS: Record<Lang, GalleryItem[]> = {
   es: [
     {
       title: 'Bible is Open',
-      description: 'Una aplicación estilo blog para compartir reflexiones bíblicas. Desarrollada con Angular en el front-end y NodeJS en el back-end, con base de datos para almacenar el contenido publicado. Proyecto en fase final de producción.',
+      description: 'Un SaaS estilo blog para compartir reflexiones bíblicas, desarrollado con Next.js y equipado con potentes integraciones y herramientas.',
       image: 'assets/bibleisopen.png',
-      tags: ['Angular', 'NodeJS'],
-      comingSoon: true
+      tags: ['Next.js', 'SaaS'],
+      demoUrl: 'https://bible-is-open-v.vercel.app/'
     },
     {
       title: 'RT Pulido Técnico',
